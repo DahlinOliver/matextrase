@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 10vh;
+    margin: auto;
+}
+
+nav h1 {
+    font-size: 2rem;
+    color: #000;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #8CD867;
+    transition: 0.3s ease-in-out;
+}
+
+.hero {
+    max-width: 100vw;
+    max-height: 90vh;
+    display: flex;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.hero-content {
+    width: 35vw;
+    height: 90vh;
+    float: left;
+    margin: 12% 5%;
+}
+
+.hero-h1 {
+    font-size: 62px;
+    padding-bottom: 1rem;
+}
+
+.hero-p {
+    font-size: 24px;
+    padding-bottom: 6rem;
+}
+
+.hero-image {
+    width: 65vw;
+    height: 90vh;
+    background: url('./img/food.jpg') no-repeat center;
+    background-size: cover;
+    float: right;
+}
+
+.hero-btn {
+    border-style: none;
+    background-color: #8CD867;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    font-weight: 900;
+    font-size: 1rem;
+    margin-right: 2rem;
+}
+
+strong {
+    color: #8CD867;
+}
+
+span {
+    font-weight: 300;
+}
+
+.produkter {
+    width: 100vw;
+    height: 100vh;  
+    background-color: gray;
+}
+
+.produkter h1 {
+    text-align: center;
+    padding-top: 7%;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+}
+
+.card {
+    background-color: #fff;
+    width: 10vw;
+    height: 20vh;
+    border-radius: 50%;
+}
+
+.inkopslista {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.inkopslista h1 {
+    text-align: center;
+    padding-top: 7%;
+}
