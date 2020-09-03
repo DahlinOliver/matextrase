@@ -1,0 +1,70 @@
+<!DOCTYPE hmtml>
+<html land="sv">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Kontakt - MatExtra</title>
+    <link rel="stylesheet" href="kontakt.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrety="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+
+<body class="subpage">
+    <div role="main">
+
+        <header>
+
+        </header>
+        <div id="kontakt">
+            <h2 id="uppertext">Kontakt</h2>
+            <i class="fas fa-mail-bulk icon"></i>
+        </div>
+        <form action="kontakt.html" method="post">
+
+            <fieldset>
+                <legend>Dina uppgifter</legend>
+                <p>
+                    <label for="username">Namn:</label>
+                    <label for="username" class="req-field">
+                    <strong class="required" title="required field">*</strong>        
+                </label>
+                    <input type="text" name="uname" id="uname" required placeholder="Namn Efternamn" />
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <label for="email" class="req-field">
+                    <strong class="required" title="reguired field">*</strong> 
+                </label>
+                    <input type="email" name="email" id="email" required placeholder="peter@pan.com" />
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Meddelande</legend>
+                <p>
+                    <label for="mmessage">Text:</label>
+                    <label for="mmessage" class="req-field">
+                    <strong class="required" title="Obligatorisk uppgift">*</strong> 
+                </label>
+                    <textarea id="mmessage" name="mmessage" required placeholder="Skriv ditt meddelande. Minst 20 tecken."></textarea>
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <input value="skicka" type="submit" />
+                </p>
+
+                <input name="prevent_multiple_submits" value="{$random_string}" type="hidden">
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <small>&copy; MatExtra AB SWEDEN</small>
+    </footer>
+    <script src=""></script>
+    <script src=""></script>
+</body>
+
+</html>
