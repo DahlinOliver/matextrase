@@ -209,3 +209,75 @@ sl-rating {
     text-align: center;
     padding-top: 7%;
 }
+
+#kontakt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#uppertext {
+    padding-right: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 0.1rem 0.1rem rgb(217, 226, 217);
+}
+
+.icon {
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem rgb(217, 226, 217);
+}
+
+.required {
+    font-size: 1rem;
+}
+
+div[role=main] {
+    flex: 1 1 30vh;
+}
+
+fieldset {
+    padding: 1vh;
+    border-radius: 0.5vh;
+    margin-bottom: 1vh;
+}
+
+legend {
+    font-size: 1.5rem;
+}
+
+form p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+label {
+    flex: 0 1 10ch;
+    text-align: right;
+    padding-right: 1ch;
+}
+
+.req-field {
+    flex: 0 0 2ch;
+    order: 1;
+    text-align: center;
+    padding-right: 0;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    flex: 1 1 20ch;
+    max-width: 30vh;
+}
+
+textarea {
+    height: 5vh;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    font-size: 1rem;
+}
