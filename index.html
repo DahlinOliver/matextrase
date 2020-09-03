@@ -87,9 +87,50 @@
         <h1>Om oss</h1>
     </div>
 
-    <div id="kontakt" class="kontakt">
+    <div id="kontakt">
         <h1>Kontakt</h1>
+        <i class="fas fa-mail-bulk icon"></i>
     </div>
+    <form action="kontakt.html" method="post">
+
+        <fieldset>
+            <legend>Dina uppgifter</legend>
+            <p>
+                <label for="username">Namn:</label>
+                <label for="username" class="req-field">
+                    <strong class="required" title="required field">*</strong>
+                </label>
+                <input type="text" name="uname" id="uname" required placeholder="Namn Efternamn" />
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <label for="email" class="req-field">
+                    <strong class="required" title="reguired field">*</strong>
+                </label>
+                <input type="email" name="email" id="email" required placeholder="peter@pan.com" />
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Meddelande</legend>
+            <p>
+                <label for="mmessage">Text:</label>
+                <label for="mmessage" class="req-field">
+                    <strong class="required" title="Obligatorisk uppgift">*</strong>
+                </label>
+                <textarea id="mmessage" name="mmessage" required
+                    placeholder="Skriv ditt meddelande. Minst 20 tecken."></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <p>
+                <input value="skicka" type="submit" />
+            </p>
+
+            <input name="prevent_multiple_submits" value="{$random_string}" type="hidden">
+        </fieldset>
+    </form>
+    </div>
+
 </body>
 
 </html>
