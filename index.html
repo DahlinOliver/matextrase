@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.17/dist/shoelace/shoelace.css">
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.17/dist/shoelace/shoelace.esm.js"></script>
+    <link rel="icon" href="./icon/matextra-icon.svg" type="image/svg" sizes="32x32">
     <title>MatExtra.se</title>
 </head>
 
@@ -18,10 +23,10 @@
             <h1 href="#hem"><span>Mat</span>Extra<strong>.</strong><span>se</span></h1>
             <ul>
                 <li><a href="#hem">Hem</a></li>
-                <li><a href="#produkter">Produkter</a></li>
+                <li><a href="#rätter">Rätter</a></li>
                 <li><a href="#inkopslista">Inköpslista</a></li>
-                <li><a href="#">Om oss</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="#om-oss">Om oss</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
     </header>
@@ -32,26 +37,45 @@
             <p class="hero-p">Matextra har den bästa maten på marknaden <br> med fokus på ekologiska och
                 veganskaprodukter.</p>
 
-            <button class="hero-btn">Produkter</button>
-            <button class="hero-btn">Inköpslista</button>
+            <button href="#rätter" class="hero-btn">Rätter</button>
+            <button href="#inkopslista" class="hero-btn">Inköpslista</button>
         </div>
 
         <div class="hero-image"></div>
     </div>
 
-
-    <div id="produkter" class="produkter">
-        <h1>Produkter</h1>
-
+    <div id="rätter" class="rätter">
+        <h1>Våra rätter</h1>
+        <h2>Våra produkter är 100% veganska och ekologiska</h2>
         <div class="cards">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-        </div>
+            <div class="card">
+                <img class="plate" src="./img/plate.png">
+                <h1>Greek</h1>
+                <h2>A touch of Mediterranean freshness</h2>
+                <sl-rating readonly value="4.5"></sl-rating>
+            </div>
+            <div class="card">
+                <img class="plate" src="./img/plate.png">
+                <h1>Italian</h1>
+                <h2>Packed full of good fats and carbs</h2>
+                <sl-rating readonly value="4"></sl-rating>
 
+            </div>
+            <div class="card">
+                <img class="plate" src="./img/plate.png">
+                <h1>Greek</h1>
+                <h2>A touch of Mediterranean freshness</h2>
+                <sl-rating readonly value="4.5"></sl-rating>
+
+            </div>
+            <div class="card">
+                <img class="plate" src="./img/plate.png">
+                <h1>Avocado Caesar</h1>
+                <h2>A touch of Mediterranean freshness</h2>
+                <sl-rating readonly value="5"></sl-rating>
+
+            </div>
+        </div>
 
     </div>
 
@@ -59,6 +83,13 @@
         <h1>Inköpslista</h1>
     </div>
 
+    <div id="om-oss" class="om-oss">
+        <h1>Om oss</h1>
+    </div>
+
+    <div id="kontakt" class="kontakt">
+        <h1>Kontakt</h1>
+    </div>
 </body>
 
 </html>

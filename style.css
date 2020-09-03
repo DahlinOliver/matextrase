@@ -11,6 +11,8 @@ header {
     background-color: #fff;
     position: sticky;
     top: 0;
+    box-shadow: 0 4px 6px -6px #222;
+    z-index: 1;
 }
 
 nav {
@@ -88,6 +90,13 @@ a:hover {
     font-weight: 900;
     font-size: 1rem;
     margin-right: 2rem;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: darkgreen;
+    color: #fff;
+    transition: 0.3s ease-in-out;
 }
 
 strong {
@@ -98,15 +107,23 @@ span {
     font-weight: 300;
 }
 
-.produkter {
+.rätter {
     width: 100vw;
-    height: 100vh;  
-    background-color: gray;
+    height: 85vh;  
+    background-color: #fff;
 }
 
-.produkter h1 {
+.rätter h1 {
     text-align: center;
     padding-top: 7%;
+}
+
+.rätter h2 {
+    text-align: center;
+    color: darkgray;
+    margin-top: 0.5rem;
+    font-weight: 300;
+    font-size: 1rem;
 }
 
 .cards {
@@ -117,10 +134,47 @@ span {
 }
 
 .card {
-    background-color: #fff;
-    width: 10vw;
-    height: 20vh;
+    background-color: #bee0ad;
+    width: 16vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translate(0, -10%);
+    transition: 0.5s ease-in-out;
+}
+
+sl-rating {
+    --symbol-color-active: #164200;
+    --symbol-color: #fff;
+    padding: 8%;
+}
+
+.plate {
+    width: 12.5vw;
+    height: 25vh;
+    transform: translate(0, -20%);
+    box-shadow: 0 25px 50px -20px #222;
     border-radius: 50%;
+}
+
+.card h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.card h2 {
+    text-align: center;
+    color: gray;
+    font-weight: 300;
+    font-size: 1rem;
 }
 
 .inkopslista {
@@ -130,6 +184,28 @@ span {
 }
 
 .inkopslista h1 {
+    text-align: center;
+    padding-top: 7%;
+}
+
+.om-oss {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.om-oss h1 {
+    text-align: center;
+    padding-top: 7%;
+}
+
+.kontakt {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.kontakt h1 {
     text-align: center;
     padding-top: 7%;
 }
