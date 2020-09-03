@@ -1,0 +1,93 @@
+body {
+    margin: auto;
+    max-width: 90vh;
+    font-family: 'roboto';
+    font-size: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+body>header,
+body>footer {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+}
+
+#kontakt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#uppertext {
+    padding-right: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 0.1rem 0.1rem rgb(217, 226, 217);
+}
+
+.icon {
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem rgb(217, 226, 217);
+}
+
+strong {
+    font-size: 1rem;
+}
+
+div[role=main] {
+    flex: 1 1 30vh;
+}
+
+fieldset {
+    padding: 1vh;
+    border-radius: 0.5vh;
+    margin-bottom: 1vh;
+}
+
+legend {
+    font-size: 1.5rem;
+}
+
+form p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+label {
+    flex: 0 1 10ch;
+    text-align: right;
+    padding-right: 1ch;
+}
+
+.req-field {
+    flex: 0 0 2ch;
+    order: 1;
+    text-align: center;
+    padding-right: 0;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    flex: 1 1 20ch;
+    max-width: 30vh;
+}
+
+textarea {
+    height: 5vh;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    font-size: 1rem;
+}
