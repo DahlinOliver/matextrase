@@ -281,3 +281,8 @@ input[type="submit"] {
     margin: auto;
     font-size: 1rem;
 }
+
+.shop-item-image {
+    width: 100px;
+    height: 100px;
+}
