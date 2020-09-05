@@ -107,18 +107,18 @@ span {
     font-weight: 300;
 }
 
-.rätter {
+.meny {
     width: 100vw;
     height: 85vh;  
     background-color: #fff;
 }
 
-.rätter h1 {
+.meny h1 {
     text-align: center;
     padding-top: 7%;
 }
 
-.rätter h2 {
+.meny h2 {
     text-align: center;
     color: darkgray;
     margin-top: 0.5rem;
