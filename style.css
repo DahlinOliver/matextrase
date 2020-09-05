@@ -133,3 +133,8 @@ span {
     text-align: center;
     padding-top: 7%;
 }
+
+/* bilder till inköpslista storlek */
+.shop-item-image {
+    max-width: 100px;
+}
