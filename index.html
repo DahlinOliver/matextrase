@@ -48,35 +48,35 @@
     <section id="dishes" class="dishes">
         <h1>Meny</h1>
         <h2>Våra produkter är 100% veganska och ekologiska</h2>
-        <section class="cards">
-            <section class="card">
+        <div class="cards">
+            <div class="card">
                 <img class="plate" src="./img/plate.png">
                 <h1>Greek</h1>
                 <h2>A touch of Mediterranean freshness</h2>
                 <sl-rating readonly value="4.5"></sl-rating>
-            </section>
-            <section class="card">
+            </div>
+            <div class="card">
                 <img class="plate" src="./img/plate.png">
                 <h1>Italian</h1>
                 <h2>Packed full of good fats and carbs</h2>
                 <sl-rating readonly value="4"></sl-rating>
 
-            </section>
-            <section class="card">
+            </div>
+            <div class="card">
                 <img class="plate" src="./img/plate.png">
                 <h1>Greek</h1>
                 <h2>A touch of Mediterranean freshness</h2>
                 <sl-rating readonly value="4.5"></sl-rating>
 
-            </section>
-            <section class="card">
+            </div>
+            <div class="card">
                 <img class="plate" src="./img/plate.png">
                 <h1>Avocado Caesar</h1>
                 <h2>A touch of Mediterranean freshness</h2>
                 <sl-rating readonly value="5"></sl-rating>
 
-            </section>
-        </section>
+            </div>
+        </div>
 
     </section>
 
@@ -117,17 +117,17 @@
                     </section>
                 </div>
             </div>
-
         </div>
 
-        <div class="container content-section">
+
+        <section class="container content-section">
             <h2 class="section-header">KUNDVAGN</h2>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">VARA</span>
                 <span class="cart-price cart-header cart-column">PRIS</span>
                 <span class="cart-quantity cart-header cart-column">ANTAL</span>
             </div>
-            <section class="cart-items">
+            <div class="cart-items">
                 <!-- <div class="cart-row">
                         <div class="cart-item cart-column">
                             <img class="cart-item-image" src="./img/plate.png" width="100" height="100">
@@ -150,58 +150,60 @@
                             <button class="btn btn-danger" type="button">TA BORT</button>
                         </div>
                     </div> -->
-                <section class="cart-total">
+                <div class="cart-total">
                     <strong class="cart-total-title">Totalt</strong>
                     <span class="cart-total-price"></span>
-                </section>
+                </div>
                 <button class="btn btn-primary btn-purchase" type="button">KÖP</button>
+            </div>
         </section>
 
-    <section id="about" class="about">
-        <h1>Om oss</h1>
-    </section>
+        <section id="about" class="about">
+            <h1>Om oss</h1>
+            <section id="contact">
+                <h1>Kontakt</h1>
+                <i class="fas fa-mail-bulk icon"></i>
+            </section>
+            <form action="kontakt.html" method="post">
 
-    <section id="contact">
-        <h1>Kontakt</h1>
-        <i class="fas fa-mail-bulk icon"></i>
-    </section>
-    <form action="kontakt.html" method="post">
+                <fieldset>
+                    <legend>Dina uppgifter</legend>
+                    <p>
+                        <label for="username">Namn:</label>
+                        <label for="username" class="req-field">
+                            <strong class="required" title="required field">*</strong>
+                        </label>
+                        <input type="text" name="uname" id="uname" required placeholder="Namn Efternamn" />
+                    </p>
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <label for="email" class="req-field">
+                            <strong class="required" title="reguired field">*</strong>
+                        </label>
+                        <input type="email" name="email" id="email" required placeholder="peter@pan.com" />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Meddelande</legend>
+                    <p>
+                        <label for="mmessage">Text:</label>
+                        <label for="mmessage" class="req-field">
+                            <strong class="required" title="Obligatorisk uppgift">*</strong>
+                        </label>
+                        <textarea id="mmessage" name="mmessage" required
+                            placeholder="Skriv ditt meddelande. Minst 20 tecken."></textarea>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <p>
+                        <input value="skicka" type="submit" />
+                    </p>
 
-        <fieldset>
-            <legend>Dina uppgifter</legend>
-            <p>
-                <label for="username">Namn:</label>
-                <label for="username" class="req-field">
-                    <strong class="required" title="required field">*</strong>
-                </label>
-                <input type="text" name="uname" id="uname" required placeholder="Namn Efternamn" />
-            </p>
-            <p>
-                <label for="email">E-mail:</label>
-                <label for="email" class="req-field">
-                    <strong class="required" title="reguired field">*</strong>
-                </label>
-                <input type="email" name="email" id="email" required placeholder="peter@pan.com" />
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend>Meddelande</legend>
-            <p>
-                <label for="mmessage">Text:</label>
-                <label for="mmessage" class="req-field">
-                    <strong class="required" title="Obligatorisk uppgift">*</strong>
-                </label>
-                <textarea id="mmessage" name="mmessage" required
-                    placeholder="Skriv ditt meddelande. Minst 20 tecken."></textarea>
-            </p>
-        </fieldset>
-        <fieldset>
-            <p>
-                <input value="skicka" type="submit" />
-            </p>
+                    <input name="prevent_multiple_submits" value="{$random_string}" type="hidden">
+                </fieldset>
+            </form>
 
-            <input name="prevent_multiple_submits" value="{$random_string}" type="hidden">
-        </fieldset>
-    </form>
+        </section>
 </body>
+
 </html>

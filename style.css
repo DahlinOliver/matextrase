@@ -205,12 +205,12 @@ sl-rating {
     background-color: #f2f2f2;
 }
 
-.contakt h1 {
+.contact h1 {
     text-align: center;
     padding-top: 7%;
 }
 
-#contakt {
+#contact {
     display: flex;
     justify-content: center;
     align-items: center;
