@@ -107,18 +107,20 @@ span {
     font-weight: 300;
 }
 
-.dishes {
+/* MENY */
+
+#dishes {
     width: 100vw;
     height: 85vh;  
     background-color: #fff;
 }
 
-.dishes h1 {
+#dishes h1 {
     text-align: center;
     padding-top: 7%;
 }
 
-.dishes h2 {
+#dishes h2 {
     text-align: center;
     color: darkgray;
     margin-top: 0.5rem;
@@ -177,35 +179,64 @@ sl-rating {
     font-size: 1rem;
 }
 
-.cart {
+/* KUNDVAGN */
+
+#cart {
     width: 100vw;
     height: 100vh;
     background-color: #f2f2f2;
 }
 
-.cart h1 {
+#cart h1 {
     text-align: center;
     padding-top: 7%;
 }
 
-.about {
+
+/* OM OSS */
+
+#about {
     width: 100vw;
     height: 100vh;
     background-color: #fff;
 }
 
-.about h1 {
+#about h1 {
     text-align: center;
     padding-top: 7%;
 }
 
-.contact {
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+}
+
+.profile-box {
+    width: 320px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 5px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #000;
+}
+
+
+/* KONTAKT */
+
+#contact {
     width: 100vw;
     height: 100vh;
     background-color: #f2f2f2;
 }
 
-.contact h1 {
+#contact h1 {
     text-align: center;
     padding-top: 7%;
 }
@@ -283,3 +314,4 @@ input[type="submit"] {
     width: 100px;
     height: 100px;
 }
+
