@@ -177,40 +177,40 @@ sl-rating {
     font-size: 1rem;
 }
 
-.inkopslista {
+.cart {
     width: 100vw;
     height: 100vh;
     background-color: #f2f2f2;
 }
 
-.inkopslista h1 {
+.cart h1 {
     text-align: center;
     padding-top: 7%;
 }
 
-.om-oss {
+.about {
     width: 100vw;
     height: 100vh;
     background-color: #fff;
 }
 
-.om-oss h1 {
+.about h1 {
     text-align: center;
     padding-top: 7%;
 }
 
-.kontakt {
+.contact {
     width: 100vw;
     height: 100vh;
     background-color: #f2f2f2;
 }
 
-.kontakt h1 {
+.contakt h1 {
     text-align: center;
     padding-top: 7%;
 }
 
-#kontakt {
+#contakt {
     display: flex;
     justify-content: center;
     align-items: center;
