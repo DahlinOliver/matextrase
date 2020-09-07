@@ -45,6 +45,7 @@
         <section class="hero-image"></section>
     </main>
 
+    <!--MENY-->
     <section id="dishes" class="dishes">
         <h1>Meny</h1>
         <h2>Våra produkter är 100% veganska och ekologiska</h2>
@@ -80,6 +81,7 @@
 
     </section>
 
+    <!--KUNDVAGN-->
     <section id="cart" class="cart">
         <h1>Kundvagn</h1>
         <div class="container content-section">
@@ -118,9 +120,7 @@
                 </div>
             </div>
         </div>
-
-
-        <section class="container content-section">
+        <div class="container content-section">
             <h2 class="section-header">KUNDVAGN</h2>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">VARA</span>
@@ -156,16 +156,21 @@
                 </div>
                 <button class="btn btn-primary btn-purchase" type="button">KÖP</button>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="about" class="about">
-            <h1>Om oss</h1>
-            <section id="contact">
-                <h1>Kontakt</h1>
-                <i class="fas fa-mail-bulk icon"></i>
-            </section>
-            <form action="kontakt.html" method="post">
+    <!--OM OSS-->
+    <section id="about" class="about">
+        <h1>Om oss</h1>
+    </section>
 
+    <!--KONTAKT-->
+    <section id="contact" class="contact">
+        <div>
+            <h1>Kontakt</h1>
+        </div>
+        <div class="container content-section">
+            <form method="post">
                 <fieldset>
                     <legend>Dina uppgifter</legend>
                     <p>
@@ -202,8 +207,8 @@
                     <input name="prevent_multiple_submits" value="{$random_string}" type="hidden">
                 </fieldset>
             </form>
-
-        </section>
+        </div>
+    </section>
 </body>
 
 </html>
