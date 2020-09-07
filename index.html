@@ -20,6 +20,7 @@
 
 <body id="home">
 
+    <!--HEADER-->
     <header>
         <nav>
             <h1 href="#home"><span>Mat</span>Extra<strong>.</strong><span>se</span></h1>
@@ -28,22 +29,23 @@
                 <li><a href="#dishes">Meny</a></li>
                 <li><a href="#cart">Kundvagn</a></li>
                 <li><a href="#about">Om oss</a></li>
+                <li><a href="#customer">Kundservice</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="hero">
-        <section class="hero-content">
+    <!--MAIN-->
+    <main id="hero">
+        <div class="hero-content">
             <h1 class="hero-h1">Vi levererar god <strong>MAT</strong> <br> men med <strong>SYFTE</strong></h1>
             <p class="hero-p">Matextra har den bästa maten på marknaden <br> med fokus på ekologiska och
                 veganskaprodukter.</p>
-
             <button onclick="window.location.href='#dishes'" class="hero-btn">Meny</button>
             <button onclick="window.location.href='#cart'" class="hero-btn">Kundvagn</button>
-        </section>
+        </div>
 
-        <section class="hero-image"></section>
+        <div class="hero-image"></div>
     </main>
 
     <!--MENY-->
@@ -129,28 +131,6 @@
                 <span class="cart-quantity cart-header cart-column">ANTAL</span>
             </div>
             <div class="cart-items">
-                <!-- <div class="cart-row">
-                        <div class="cart-item cart-column">
-                            <img class="cart-item-image" src="./img/plate.png" width="100" height="100">
-                            <span class="cart-item-title">GREEK</span>
-                        </div>
-                        <span class="cart-price cart-column">69 SEK</span>
-                        <div class="cart-quantity cart-column">
-                            <input class="cart-quantity-input" type="number" value="1">
-                            <button class="btn btn-danger" type="button">TA BORT</button>
-                        </div>
-                    </div>
-                    <div class="cart-row">
-                        <div class="cart-item cart-column">
-                            <img class="cart-item-image" src="./img/plate.png" width="100" height="100">
-                            <span class="cart-item-title">AVOCADO CEASAR</span>
-                        </div>
-                        <span class="cart-price cart-column">69 SEK</span>
-                        <div class="cart-quantity cart-column">
-                            <input class="cart-quantity-input" type="number" value="2">
-                            <button class="btn btn-danger" type="button">TA BORT</button>
-                        </div>
-                    </div> -->
                 <div class="cart-total">
                     <strong class="cart-total-title">Totalt</strong>
                     <span class="cart-total-price"></span>
@@ -225,50 +205,61 @@
 
     </section>
 
+    <!--KUNDSERVICE-->
+    <section id="customer">
+        <h1>KUNDSERVICE</h1>
+        <div class="customer-content">
+            <div class="contact-us">
+                <h2>Ring oss</h2>
+                <p>Ring oss och få hjälp direkt vi telefon, gäller det en beställning ha ordernummer tillgängligt för
+                    snabbare service. </p>
+            </div>
+            <div class="contact-us">
+                <h2>E-mail</h2>
+                <p>Maila oss dina frågor eller om du har klagomål, ange order nummer för snabbare service.</p>
+            </div>
+            <div class="contact-us">
+                <h2>Skicka brev till oss</h2>
+                <p>Vill du istället skicka brev går det också bra. <br>Adress:<br>Mat Extra<br>Matgatan 55<br>Box 123 45 Stockholm<br></p>
+            </div>
+            <div class="contact-us">
+                <h2>Chatta med oss live<br><i class="fas fa-headset"></i></h2>
+                <p>Vill du chatta med oss live <a href="">klicka här.</a></p>
+            </div>
+        </div>
+    </section>
+
     <!--KONTAKT-->
     <section id="contact">
-        <div>
-            <h1>Kontakt</h1>
-        </div>
-        <div class="container content-section">
-            <form method="post">
-                <fieldset>
-                    <legend>Dina uppgifter</legend>
-                    <p>
-                        <label for="username">Namn:</label>
-                        <label for="username" class="req-field">
-                            <strong class="required" title="required field">*</strong>
-                        </label>
-                        <input type="text" name="uname" id="uname" required placeholder="Namn Efternamn" />
-                    </p>
-                    <p>
-                        <label for="email">E-mail:</label>
-                        <label for="email" class="req-field">
-                            <strong class="required" title="reguired field">*</strong>
-                        </label>
-                        <input type="email" name="email" id="email" required placeholder="peter@pan.com" />
-                    </p>
-                </fieldset>
-                <fieldset>
-                    <legend>Meddelande</legend>
-                    <p>
-                        <label for="mmessage">Text:</label>
-                        <label for="mmessage" class="req-field">
-                            <strong class="required" title="Obligatorisk uppgift">*</strong>
-                        </label>
-                        <textarea id="mmessage" name="mmessage" required
-                            placeholder="Skriv ditt meddelande. Minst 20 tecken."></textarea>
-                    </p>
-                </fieldset>
-                <fieldset>
-                    <p>
-                        <input value="skicka" type="submit" />
-                    </p>
-
-                    <input name="prevent_multiple_submits" value="{$random_string}" type="hidden">
-                </fieldset>
-            </form>
-        </div>
+        <h1>Kontakt</h1>
+        <form method="post">
+            <fieldset>
+                <legend>Dina uppgifter</legend>
+                <label for="username">Namn:</label>
+                <label for="username" class="req-field">
+                    <strong class="required" title="required field">*</strong>
+                </label>
+                <input type="text" name="uname" id="uname" required placeholder="Namn Efternamn" />
+                <br>
+                <label for="email">E-mail:</label>
+                <label for="email" class="req-field">
+                    <strong class="required" title="reguired field">*</strong>
+                </label>
+                <input type="email" name="email" id="email" required placeholder="peter@pan.com" />
+            </fieldset>
+            <fieldset>
+                <legend>Meddelande</legend>
+                <label for="message">Text:</label>
+                <label for="message" class="req-field"><strong class="required" title="Obligatorisk uppgift">*</strong>
+                </label>
+                <textarea id="message" name="message" required
+                    placeholder="Skriv ditt meddelande. Minst 20 tecken."></textarea>
+            </fieldset>
+            <fieldset>
+                <input value="Skicka" type="submit" />
+                <input name="prevent_multiple_submits" value="{$random_string}" type="hidden" />
+            </fieldset>
+        </form>
     </section>
 </body>
 
