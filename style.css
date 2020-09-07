@@ -107,18 +107,18 @@ span {
     font-weight: 300;
 }
 
-.meny {
+.dishes {
     width: 100vw;
     height: 85vh;  
     background-color: #fff;
 }
 
-.meny h1 {
+.dishes h1 {
     text-align: center;
     padding-top: 7%;
 }
 
-.meny h2 {
+.dishes h2 {
     text-align: center;
     color: darkgray;
     margin-top: 0.5rem;
