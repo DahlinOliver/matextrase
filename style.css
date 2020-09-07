@@ -107,6 +107,7 @@ span {
     font-weight: 300;
 }
 
+
 /* MENY */
 
 #dishes {
@@ -179,6 +180,7 @@ sl-rating {
     font-size: 1rem;
 }
 
+
 /* KUNDVAGN */
 
 #cart {
@@ -238,27 +240,73 @@ h4 {
     margin: 5px auto;
 }
 
-
-/* KONTAKT */
-
-#contact {
-    width: 100vw;
-    height: 100vh;
-    background-color: #f2f2f2;
+.shop-item-image {
+    width: 100px;
+    height: 100px;
 }
 
-#contact h1 {
+
+/* nya tillägg i style css för kundservice ==== */
+
+.customerservice {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#customerserv {
     text-align: center;
-    padding-top: 7%;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 4px rgb(93, 224, 93);
 }
 
-#contact {
+.icons {
+    height: 200px;
+    width: 200px;
+    display: inline-flexbox;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.icons h6 {
+    color: rgb(42, 148, 42);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.icons h6 {
+    font-size: 1.2rem;
+}
+
+textarea {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+input[type="submit"] {
+    color: white;
+    text-shadow: 0.7px 0.7px rgb(80, 76, 76);
+    background-color: rgb(38, 160, 22);
+}
+
+
+/* =========kundservise / kontakt */
+
+.kontakta {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#uppertext {
+#kontakt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kontakt h2 {
     padding-right: 2rem;
     font-size: 2.5rem;
     text-shadow: 0.1rem 0.1rem rgb(217, 226, 217);
@@ -269,19 +317,23 @@ h4 {
     text-shadow: 0.1rem 0.1rem rgb(217, 226, 217);
 }
 
-.required {
+#kontakt strong {
     font-size: 1rem;
 }
 
+div[role=main] {
+    flex: 1 1 30vh;
+}
 
 fieldset {
+    width: 60vh;
     padding: 1vh;
     border-radius: 0.5vh;
     margin-bottom: 1vh;
 }
 
 legend {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 form p {
@@ -320,13 +372,3 @@ input[type="submit"] {
     margin: auto;
     font-size: 1rem;
 }
-
-.shop-item-image {
-    width: 100px;
-    height: 100px;
-}
-
-/***OM OSS***/
-
-
->>>>>>> 789e9cf6bc7428a066a680a65b0e396d6d84b5a9
