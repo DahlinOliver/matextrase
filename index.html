@@ -32,57 +32,57 @@
         </nav>
     </header>
 
-    <div class="hero">
-        <div class="hero-content">
+    <main class="hero">
+        <section class="hero-content">
             <h1 class="hero-h1">Vi levererar god <strong>MAT</strong> <br> men med <strong>SYFTE</strong></h1>
             <p class="hero-p">Matextra har den bästa maten på marknaden <br> med fokus på ekologiska och
                 veganskaprodukter.</p>
 
             <button href="#rätter" class="hero-btn">Meny</button>
             <button href="#inkopslista" class="hero-btn">Kundvagn</button>
-        </div>
+        </section>
 
-        <div class="hero-image"></div>
-    </div>
+        <section class="hero-image"></section>
+    </main>
 
-    <div id="rätter" class="rätter">
+    <section id="rätter" class="rätter">
         <h1>Meny</h1>
         <h2>Våra produkter är 100% veganska och ekologiska</h2>
-        <div class="cards">
-            <div class="card">
+        <section class="cards">
+            <section class="card">
                 <img class="plate" src="./img/plate.png">
                 <h1>Greek</h1>
                 <h2>A touch of Mediterranean freshness</h2>
                 <sl-rating readonly value="4.5"></sl-rating>
-            </div>
-            <div class="card">
+            </section>
+            <section class="card">
                 <img class="plate" src="./img/plate.png">
                 <h1>Italian</h1>
                 <h2>Packed full of good fats and carbs</h2>
                 <sl-rating readonly value="4"></sl-rating>
 
-            </div>
-            <div class="card">
+            </section>
+            <section class="card">
                 <img class="plate" src="./img/plate.png">
                 <h1>Greek</h1>
                 <h2>A touch of Mediterranean freshness</h2>
                 <sl-rating readonly value="4.5"></sl-rating>
 
-            </div>
-            <div class="card">
+            </section>
+            <section class="card">
                 <img class="plate" src="./img/plate.png">
                 <h1>Avocado Caesar</h1>
                 <h2>A touch of Mediterranean freshness</h2>
                 <sl-rating readonly value="5"></sl-rating>
 
-            </div>
-        </div>
+            </section>
+        </section>
 
-    </div>
+    </section>
 
-    <div id="inkopslista" class="inkopslista">
+    <section id="inkopslista" class="inkopslista">
         <h1>Kundvagn</h1>
-        <section class="container content-section">
+        <div class="container content-section">
             <div class="shop-items">
                 <div class="shop-item">
                     <span class="shop-item-title">GREEK</span>
@@ -111,23 +111,23 @@
                 <div class="shop-item">
                     <span class="shop-item-title">AVOCADO CEASAR</span>
                     <img class="shop-item-image" src="./img/plate.png">
-                    <div class="shop-item-details">
+                    <section class="shop-item-details">
                         <span class="shop-item-price">69 SEK</span>
                         <button class="btn btn-primary shop-item-button" type="button">LÄGG TILL</button>
-                    </div>
+                    </section>
                 </div>
             </div>
 
-        </section>
+        </div>
 
-        <section class="container content-section">
+        <div class="container content-section">
             <h2 class="section-header">KUNDVAGN</h2>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">VARA</span>
                 <span class="cart-price cart-header cart-column">PRIS</span>
                 <span class="cart-quantity cart-header cart-column">ANTAL</span>
             </div>
-            <div class="cart-items">
+            <section class="cart-items">
                 <!-- <div class="cart-row">
                         <div class="cart-item cart-column">
                             <img class="cart-item-image" src="./img/plate.png" width="100" height="100">
@@ -150,25 +150,21 @@
                             <button class="btn btn-danger" type="button">TA BORT</button>
                         </div>
                     </div> -->
-                <div class="cart-total">
+                <section class="cart-total">
                     <strong class="cart-total-title">Totalt</strong>
                     <span class="cart-total-price"></span>
-                </div>
+                </section>
                 <button class="btn btn-primary btn-purchase" type="button">KÖP</button>
         </section>
 
-    </div>
-
-    </div>
-
-    <div id="om-oss" class="om-oss">
+    <section id="om-oss" class="om-oss">
         <h1>Om oss</h1>
-    </div>
+    </section>
 
-    <div id="kontakt">
+    <section id="kontakt">
         <h1>Kontakt</h1>
         <i class="fas fa-mail-bulk icon"></i>
-    </div>
+    </section>
     <form action="kontakt.html" method="post">
 
         <fieldset>
@@ -207,8 +203,5 @@
             <input name="prevent_multiple_submits" value="{$random_string}" type="hidden">
         </fieldset>
     </form>
-    </div>
-
 </body>
-
 </html>
