@@ -283,3 +283,60 @@ input[type="submit"] {
     width: 100px;
     height: 100px;
 }
+
+/***OM OSS***/
+
+
+.container_nr1{
+    padding: 20px 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-box{
+ 
+    padding:  20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    flex-basis: 33%
+}
+
+
+/*@media(min-with: 900px){
+    .call-out-container{
+     padding: 20px 20px;
+    display: flex;
+    margin:  auto;
+    }
+*/
+
+.container_nr1
+.container_nr2{
+    padding: 20px 20px;
+    display: flex;
+    margin:  50px;
+    }
+
+img {
+  border-radius: 50%;
+  width: 100x;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+
+}
+.profile-box p{
+     text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+
+h3, h4 {
+    text-align: ccenter;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
