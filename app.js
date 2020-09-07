@@ -3,6 +3,7 @@ if (document.readyState == 'loading') {
 } else {
     ready()
 }
+/*HEJ*/
 
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
