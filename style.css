@@ -215,7 +215,6 @@ sl-rating {
 }
 
 .profile-box {
-    position: relative;
     height: 38vh;
     width: 30vh;
     border: 1px solid #000;
@@ -225,7 +224,6 @@ sl-rating {
 }
 
 .profile-pic {
-    position: relative;
     border-radius: 50%;
     width: 150px;
     margin: 10px 0px 0px 55px;
@@ -253,12 +251,16 @@ h4 {
 /* nya tillägg i style css för kundservice ==== */
 
 #contact {
+    position: relative;
     margin: auto;
+    padding-top: 15vh;
+    justify-items: center;
+    height: 100vh;
 }
 
 .customerservice {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
 }
@@ -273,6 +275,7 @@ h4 {
 .icons {
     height: 200px;
     width: 200px;
+    margin: 3vh;
     display: inline-flexbox;
     justify-content: space-between;
     align-items: center;
@@ -309,13 +312,14 @@ input[type="submit"] {
 }
 
 #kontakt {
+    margin: auto;
+    padding: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #kontakt h2 {
-    padding-right: 2rem;
     font-size: 2.5rem;
     text-shadow: 0.1rem 0.1rem rgb(217, 226, 217);
 }
