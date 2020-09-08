@@ -173,7 +173,7 @@ sl-rating {
 
 .shop-item-image {
     width: 12.5vw;
-    height: 25vh;
+    height: auto;
     transform: translate(0, -45%);
     box-shadow: 0 25px 50px -20px #222;
     border-radius: 50%;
