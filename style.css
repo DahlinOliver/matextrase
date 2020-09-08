@@ -32,9 +32,14 @@ nav h1 {
     cursor: pointer;
 }
 
+ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 li {
     list-style: none;
-    display: inline-block;
     padding: 20px;
 }
 
@@ -48,6 +53,13 @@ a {
 a:hover {
     color: #8CD867;
     transition: 0.3s ease-in-out;
+}
+
+.bag {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding: 0 0 0 3rem;
 }
 
 /* HERO */
@@ -287,7 +299,7 @@ sl-rating {
     height: 34px;
     width: 50px;
     border-radius: 5px;
-    border: 1px solid #56CCF2;
+    border: 1px solid #8CD867;
     background-color: #eee;
     color: #333;
     padding: 0;
@@ -329,12 +341,15 @@ sl-rating {
 
 #about {
     width: 100vw;
-    background-color: #fff;
+    background-color: #f2f2f2;
 }
 
 #about h1 {
+    font-size: 2rem;
+    padding-top: 7%;
     text-align: center;
-    padding-top: 5%;
+    color: #000;
+    font-weight: 700;
 }
 
 .row {
