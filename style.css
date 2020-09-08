@@ -8,20 +8,21 @@
 /* NAVBAR */
 
 header {
-    width: 100vw;
+    width: 90%;
     height: 10vh;
+    padding: 0 5% 0 5%;
     background-color: #fff;
     position: sticky;
     top: 0;
     box-shadow: 0 4px 6px -6px #222;
     z-index: 1;
 }
-                                        
+                                      
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90vw;
+    width: 100%;
     height: 10vh;
     margin: auto;
 }
@@ -59,7 +60,7 @@ a:hover {
     width: 20px;
     height: 20px;
     cursor: pointer;
-    padding: 0 0 0 3rem;
+    padding: 0 0 0 2rem;
 }
 
 /* HERO */
@@ -126,9 +127,9 @@ span {
 /* MENY */
 
 .container {
-    width: 90vw;
+    width: 90%;
     height: 100vh;
-    margin: auto;
+    padding: 0 5% 0 5%;
 }
 
 .section-header {
@@ -339,12 +340,14 @@ sl-rating {
 
 /* OM OSS */
 
-#about {
-    width: 100vw;
+.about {
+    width: 90%;
+    height: 100vh;
+    padding: 0 5% 0 5%;
     background-color: #f2f2f2;
 }
 
-#about h1 {
+.about h1 {
     font-size: 2rem;
     padding-top: 7%;
     text-align: center;
@@ -354,42 +357,44 @@ sl-rating {
 
 .row {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding-bottom: 1vh;
+    padding-top: 5%;
 }
 
 .profile-box {
-    height: 38vh;
-    width: 30vh;
-    border: 1px solid #000;
-    padding: 1vh;
-    margin: 1vh;
-    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 25vh;
+    padding: 2rem;
+    background-color: #8CD867;
+    border-radius: 5%;
 }
 
 .profile-pic {
     border-radius: 50%;
     width: 150px;
-    margin: 10px 0px 0px 55px;
-    border: 1px solid #000;
 }
 
 .profile-box p {
-    font-size: 0.9rem;
-    text-align: justify;
-    margin: 0.5rem;
+    font-size: 1rem;
 }
 
-h3,
-h4 {
+h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
     text-align: center;
     margin: 5px auto;
 }
 
-.shop-item-image {
-    width: 220px;
-    height: 220px;
+h4 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 5px auto;
 }
 
 /* nya tillägg i style css för kundservice ==== */
