@@ -539,15 +539,18 @@ input[type="submit"] {
 
 /* ANIMATION */
 
+/*
 .blad {
     position: absolute;
     z-index: 2;
     top: 35px;
     left: 70px;
 }
+*/
 
 /* BLAD ICON */
 
+/*
 .fa-seedling {
     color: #8CD867;
     text-shadow: 1px 1px 2px black;
@@ -583,3 +586,4 @@ input[type="submit"] {
         transform: scale(1);
     }
 }
+   -->                        */
