@@ -11,125 +11,284 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.17/dist/shoelace/shoelace.css">
     <script type="module"
-        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.17/dist/shoelace/shoelace.esm.js"></script>
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.17/dist/shoelace/shoelace.esm.js">
+        </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet"
+        integrety="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <link rel="icon" href="./icon/matextra-icon.svg" type="image/svg" sizes="32x32">
+    <script src="app.js"></script>
     <title>MatExtra.se</title>
 </head>
 
-<body id="hem">
+<body id="home">
 
     <header>
         <nav>
-            <h1 href="#hem"><span>Mat</span>Extra<strong>.</strong><span>se</span></h1>
+            <a href="#home">
+                <h1 href="#home"><span>Mat</span>Extra<strong>.</strong><span>se</span></h1>
+            </a>
             <ul>
-                <li><a href="#hem">Hem</a></li>
-                <li><a href="#meny">Meny</a></li>
-                <li><a href="#inkopslista">Inköpslista</a></li>
-                <li><a href="#om-oss">Om oss</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#home">Hem</a></li>
+                <li><a href="#menu">Meny</a></li>
+                <li><a href="#about">Om oss</a></li>
+                <li><a href="#contact">Kundservice</a></li>
+                <a href="#cart"><img class="bag" src="./icon/bag.svg"></a>
             </ul>
         </nav>
     </header>
 
-    <div class="hero">
-        <div class="hero-content">
+    <main class="hero">
+        <section class="hero-content">
             <h1 class="hero-h1">Vi levererar god <strong>MAT</strong> <br> men med <strong>SYFTE</strong></h1>
             <p class="hero-p">Matextra har den bästa maten på marknaden <br> med fokus på ekologiska och
-                veganskaprodukter.</p>
+                veganskaprodukter.
+            </p>
 
-            <button href="#meny" class="hero-btn">Meny</button>
-            <button href="#inkopslista" class="hero-btn">Inköpslista</button>
-        </div>
+            <button onclick="window.location.href='#menu'" class="hero-btn">Meny</button>
+            <button onclick="window.location.href='#about'" class="hero-btn">Om oss</button>
+        </section>
 
-        <div class="hero-image"></div>
-    </div>
+        <section class="hero-image"></section>
+    </main>
 
-    <div id="meny" class="meny">
-        <h1>Vår meny</h1>
+    <!--MENY-->
+
+    <section id="menu" class="container content-section">
+        <h2 class="section-header">Meny</h2>
         <h2>Våra produkter är 100% veganska och ekologiska</h2>
-        <div class="cards">
-            <div class="card">
-                <img class="plate" src="./img/plate.png">
-                <h1>Greek</h1>
-                <h2>A touch of Mediterranean freshness</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <img class="shop-item-image" src="./img/greek.png">
+                <span class="shop-item-title">Greek</span>
+                <h2>En touch av Mediteriansk friskhet</h2>
                 <sl-rating readonly value="4.5"></sl-rating>
+                <div class="shop-item-details">
+                    <span class="shop-item-price">89 kr</span>
+                    <button class="btn btn-primary shop-item-button" type="button">LÄGG TILL</button>
+                </div>
             </div>
-            <div class="card">
-                <img class="plate" src="./img/plate.png">
-                <h1>Italian</h1>
-                <h2>Packed full of good fats and carbs</h2>
+
+            <div class="shop-item">
+                <img class="shop-item-image" src="./img/italian.png">
+                <span class="shop-item-title">Italian</span>
+                <h2>Packad med kolhydrater och italienska råvaror</h2>
                 <sl-rating readonly value="4"></sl-rating>
-
+                <div class="shop-item-details">
+                    <span class="shop-item-price">69 kr</span>
+                    <button class="btn btn-primary shop-item-button" type="button">LÄGG TILL</button>
+                </div>
             </div>
-            <div class="card">
-                <img class="plate" src="./img/plate.png">
-                <h1>Greek</h1>
-                <h2>A touch of Mediterranean freshness</h2>
+
+            <div class="shop-item">
+                <img class="shop-item-image" src="./img/strawberry.png">
+                <span class="shop-item-title">Summer Love</span>
+                <h2>En riktig vitamin boost</h2>
                 <sl-rating readonly value="4.5"></sl-rating>
-
+                <div class="shop-item-details">
+                    <span class="shop-item-price">98 kr</span>
+                    <button class="btn btn-primary shop-item-button" type="button">LÄGG TILL</button>
+                </div>
             </div>
-            <div class="card">
-                <img class="plate" src="./img/plate.png">
-                <h1>Avocado Caesar</h1>
-                <h2>A touch of Mediterranean freshness</h2>
-                <sl-rating readonly value="5"></sl-rating>
 
+            <div class="shop-item">
+                <img class="shop-item-image" src="./img/avocado.png">
+                <span class="shop-item-title">Avocado</span>
+                <h2>Full packad med bra fetter</h2>
+                <sl-rating readonly value="5"></sl-rating>
+                <div class="shop-item-details">
+                    <span class="shop-item-price">98 kr</span>
+                    <button class="btn btn-primary shop-item-button" type="button">LÄGG TILL</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--OM OSS-->
+
+    <section id="about" class="about">
+        <h1>Om oss</h1>
+
+        <div class="row">
+            <div class="profile-box">
+                <img class="profile-pic" src="./img/oliver.jpg" alt="Oliver Dahlin" />
+                <h3>Oliver Dahlin</h3>
+                <h4>Personalansvarig</h4>
+                <p>
+                    Hej mitt namn är Oliver Dahlin och jag är personalansvarig här på MatExtra. Vänligen kontakta mig
+                    vid jobbansökningar. Avsnitt för bifogade filer.
+                </p>
+            </div>
+
+            <div class="profile-box">
+                <img class="profile-pic" src="./img/negin.jpg" alt="Negin Jalalian" />
+                <h3>Negin Jalaian</h3>
+                <h4>Frukt- och gröntansvar</h4>
+                <p>
+                    Jag har pluggat och jobbat i England i tio år och har percis flyttat tillbaka till Stockholm för att
+                    plugga Front-End. När jag inte kodar är jag gärna ute på min racercykel. Jag älskar att cykla långt
+                    och länge.
+                </p>
+            </div>
+
+            <div class="profile-box">
+                <img class="profile-pic" src="./img/robert.jpg" alt="Robert Wägar">
+                <h3>Robert Wägar</h3>
+                <h4>Trivsel kordinator</h4>
+                <p>
+                    Det är jag som är trivsel-kordinator (påhittad titel, i know) på Mat Extra. Jag ser till att folk
+                    trivs helt enkelt genom att lysa upp vardagen hos personal och kunder genom att sprida positiva
+                    vibes. Slänga in lite humor och ett leende förlänger livet.
+                </p>
+            </div>
+
+            <div class="profile-box">
+                <img class="profile-pic" src="./img/julian.jpg" alt="Julian Fuenzalida" />
+                <h3>Julian Fuenzalida</h3>
+                <h4>Biträdande salladsslungare</h4>
+                <p>
+                    Praktiserat som tomatskärare i 5 år och uppgraderad till biträdande salladsslungare för 1 år sedan.
+                    Njuter av mitt jobb och gör salladen helt underbar.
+                </p>
+            </div>
+
+            <div class="profile-box">
+                <img class="profile-pic" src="./img/joel.jpg" alt="Joel Hjelmstedt" />
+                <h3>Joel Hjelmstedt</h3>
+                <h4>Webb-master</h4>
+                <p>
+                    Jag är en man i mina bästa år uppvuxen i Stockholms innerstad. Har sedan barnsben varit intresserad
+                    av datorer, både hård och mjukvara.
+                </p>
             </div>
         </div>
 
+    </section>
+
+    <br><br>
+
+    <!-- KUNDSERVICE-->
+
+    <div id="contact">
+        <h5 id="customerserv">Kundservice</h5>
+        <br><br>
+        <div class="customerservice">
+            <br><br>
+            <div class="icons">
+                <h6>Ring oss <br><i class="fas fa-phone"></i></h6>
+                <p>Ring oss och få hjälp direkt vi telefon, gäller det en beställning ha ordernummer tillgängligt
+                    för snabbare service. </p>
+            </div>
+            <div class="icons">
+                <h6>E-mail <br><i class="fas fa-at"></i></h6>
+                <p>Maila oss dina frågor eller om du har klagomål, ange order nummer för snabbare service.</p>
+            </div>
+            <div class="icons">
+                <h6>Skicka brev till oss <br><i class="fas fa-envelope"></i></h6>
+                <p>Vill du istället skicka brev går det också bra. <br>Adress: Mat Extra, Matgatan 55, box 123 45
+                    Stockholm<br></p>
+            </div>
+            <div class="icons">
+                <h6>Chatta med oss live <br><i class="fas fa-headset"></i></h6>
+                <p>Vill du chatta med oss live klicka här.</p>
+            </div>
+        </div>
+
+        <!-- KONTAKT -->
+
+        <br>
+        <div id="kontakt">
+            <h2>Kontakt</h2>
+            <i class="fas fa-mail-bulk icon"></i>
+        </div>
+
+        <div class=kontakta>
+            <form action="kontakt.html" method="post">
+                <fieldset>
+                    <legend>Dina uppgifter</legend>
+                    <p>
+                        <label for="username">Namn:</label>
+                        <label for="username" class="req-field">
+                            <strong class="required" title="required field">*</strong>
+                        </label>
+                        <input type="text" name="uname" id="uname" required placeholder="FirstName LastName" />
+                    </p>
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <label for="email" class="req-field">
+                            <strong class="required" title="reguired field">*</strong>
+                        </label>
+                        <input type="email" name="email" id="email" required placeholder="peter@pan.com" />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Meddelande</legend>
+                    <p>
+                        <label for="mmessage">Text:</label>
+                        <label for="mmessage" class="req-field">
+                            <strong class="required" title="Obligatorisk uppgift">*</strong>
+                        </label>
+                        <textarea id="mmessage" name="mmessage" required
+                            placeholder="Skriv ditt meddelande. Minst 20 tecken."></textarea>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <p>
+                        <input value="skicka" type="submit" />
+                    </p>
+
+                    <input name="prevent_multiple_submits" value="{$random_string}" type="hidden">
+                </fieldset>
+            </form>
+        </div>
     </div>
 
-    <div id="inkopslista" class="inkopslista">
-        <h1>Inköpslista</h1>
-    </div>
+    <!-- KUNDVAGN -->
 
-    <div id="om-oss" class="om-oss">
-        <h1>Om oss</h1>
-    </div>
+    <section id="cart" class="container content-section">
+        <h2 class="section-header-kundvagn">Kundvagn</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">VARA</span>
+            <span class="cart-price cart-header cart-column">PRIS</span>
+            <span class="cart-quantity cart-header cart-column">ANTAL</span>
+        </div>
+        <div class="cart-items">
+            <!-- <div class="cart-row"> -->
+            <!-- <div class="cart-item cart-column">
+                            <img class="cart-item-image" src="" width="100" height="100">
+                            <span class="cart-item-title">VARA 1</span>
+                        </div>
+                        <span class="cart-price cart-column">69 kr</span>
+                        <div class="cart-quantity cart-column">
+                            <input class="cart-quantity-input" type="number" value="1">
+                            <button class="btn btn-danger" type="button">TA BORT</button>
+                        </div> -->
+            <!-- </div>
+                    <div class="cart-row"> -->
+            <!-- <div class="cart-item cart-column">
+                            <img class="cart-item-image" src="" width="100" height="100">
+                            <span class="cart-item-title">VARA 2</span>
+                        </div>
+                        <span class="cart-price cart-column">69 kr</span>
+                        <div class="cart-quantity cart-column">
+                            <input class="cart-quantity-input" type="number" value="2">
+                            <button class="btn btn-danger" type="button">TA BORT</button>
+                        </div> -->
+            <!-- </div> -->
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">TOTALT:</strong>
+            <span class="cart-total-price">0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">KÖP</button>
+    </section>
 
-    <div id="kontakt">
-        <h1>Kontakt</h1>
-        <i class="fas fa-mail-bulk icon"></i>
+    <!-- ANIMATION -->
+    <!--
+    <div class="blad">
+        <p><i class="fas fa-seedling"></i></p>
     </div>
-    <form action="kontakt.html" method="post">
-
-        <fieldset>
-            <legend>Dina uppgifter</legend>
-            <p>
-                <label for="username">Namn:</label>
-                <label for="username" class="req-field">
-                    <strong class="required" title="required field">*</strong>
-                </label>
-                <input type="text" name="uname" id="uname" required placeholder="Namn Efternamn" />
-            </p>
-            <p>
-                <label for="email">E-mail:</label>
-                <label for="email" class="req-field">
-                    <strong class="required" title="reguired field">*</strong>
-                </label>
-                <input type="email" name="email" id="email" required placeholder="peter@pan.com" />
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend>Meddelande</legend>
-            <p>
-                <label for="mmessage">Text:</label>
-                <label for="mmessage" class="req-field">
-                    <strong class="required" title="Obligatorisk uppgift">*</strong>
-                </label>
-                <textarea id="mmessage" name="mmessage" required
-                    placeholder="Skriv ditt meddelande. Minst 20 tecken."></textarea>
-            </p>
-        </fieldset>
-        <fieldset>
-            <p>
-                <input value="skicka" type="submit" />
-            </p>
-
-            <input name="prevent_multiple_submits" value="{$random_string}" type="hidden">
-        </fieldset>
-    </form>
-    </div>
+-->
 
 </body>
 
